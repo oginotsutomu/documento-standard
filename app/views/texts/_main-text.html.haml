@@ -1,3 +1,5 @@
 .main-text
   .main-text__box
-  -# = .form.text_area
+    = form_with model: @text, class: :form do |form|
+      = form.text_area :name, class: "form__text", size: "120x35"
+
