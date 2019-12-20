@@ -8,4 +8,9 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    %header.menu-bar
+      .menu-bar__title
+        = link_to "documento standard", root_path, class: "menu-bar__title__text"
+      .menu-bar__left
+        = link_to "新規作成", texts_path, class: "menu-bar__left__text"
     = yield
